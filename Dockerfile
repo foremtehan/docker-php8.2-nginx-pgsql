@@ -37,6 +37,3 @@ COPY config/conf.d /etc/nginx/conf.d/
 # Configure PHP-FPM
 COPY config/fpm-pool.conf /etc/php81/php-fpm.d/www.conf
 COPY config/php.ini /etc/php81/conf.d/custom.ini
-
-# Switch to use a non-root user from here on
-USER nobody
