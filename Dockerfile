@@ -40,8 +40,5 @@ COPY config/conf.d /etc/nginx/conf.d/
 COPY config/fpm-pool.conf /etc/php81/php-fpm.d/www.conf
 COPY config/php.ini /etc/php81/conf.d/custom.ini
 
-# Configure supervisord
-COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-
 # Switch to use a non-root user from here on
 USER nobody
