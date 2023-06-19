@@ -9,8 +9,6 @@ WORKDIR $ROOT
 RUN apk add --no-cache \
   curl \
   nginx \
-  git \
-  openssh \
   php81 \
   php81-ctype \
   php81-curl \
