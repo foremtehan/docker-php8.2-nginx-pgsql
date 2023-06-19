@@ -2,7 +2,7 @@ name: Build Docker image
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME  }}/${{ secrets.DOCKER_REPO_NAME }}
   IMAGE_TAG: ${{ github.sha }}
