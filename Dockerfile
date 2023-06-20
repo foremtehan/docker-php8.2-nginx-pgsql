@@ -4,24 +4,24 @@ FROM alpine:3.18
 RUN apk add --no-cache \
   curl \
   nginx \
-  php81 \
-  php81-ctype \
-  php81-curl \
-  php81-dom \
-  php81-fpm \
-  php81-gd \
-  php81-intl \
-  php81-mbstring \
-  php81-session \
-  php81-opcache \
-  php81-openssl \
-  php81-phar \
-  php81-tokenizer \
-  php81-fileinfo \
-  php81-xml \
-  php81-xmlwriter \
-  php81-pdo \
-  php81-pdo_pgsql \
+  php82 \
+  php82-ctype \
+  php82-curl \
+  php82-dom \
+  php82-fpm \
+  php82-gd \
+  php82-intl \
+  php82-mbstring \
+  php82-session \
+  php82-opcache \
+  php82-openssl \
+  php82-phar \
+  php82-tokenizer \
+  php82-fileinfo \
+  php82-xml \
+  php82-xmlwriter \
+  php82-pdo \
+  php82-pdo_pgsql \
   supervisor
 
 # Configure nginx - http
