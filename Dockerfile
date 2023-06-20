@@ -1,10 +1,5 @@
 FROM alpine:3.18
 
-ENV ROOT=/var/www/html
-
-# Setup document root
-WORKDIR $ROOT
-
 # Install packages and remove default server definition
 RUN apk add --no-cache \
   curl \
