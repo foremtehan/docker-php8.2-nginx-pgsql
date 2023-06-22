@@ -22,7 +22,7 @@ RUN apk add --no-cache \
   php82-xmlwriter \
   php82-pdo \
   php82-pdo_pgsql \
-  php82-sqlite3
+  php82-sqlite3 \
   supervisor
 
 # Create symlink so programs depending on `php` still function
