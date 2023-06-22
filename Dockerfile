@@ -4,6 +4,7 @@ FROM alpine:3.18
 RUN apk add --no-cache \
   curl \
   nginx \
+  git \
   php82 \
   php82-ctype \
   php82-curl \
@@ -22,7 +23,6 @@ RUN apk add --no-cache \
   php82-xmlwriter \
   php82-pdo \
   php82-pdo_pgsql \
-  php82-sqlite3 \
   supervisor
 
 # Create symlink so programs depending on `php` still function
