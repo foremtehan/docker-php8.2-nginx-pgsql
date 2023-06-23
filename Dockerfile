@@ -21,6 +21,7 @@ RUN apk add --no-cache \
   php82-fileinfo \
   php82-xml \
   php82-xmlwriter \
+  php82-simplexml \
   php82-pdo \
   php82-pdo_pgsql \
   supervisor
