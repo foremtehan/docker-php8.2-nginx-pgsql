@@ -28,6 +28,9 @@ RUN apk add --no-cache \
 # Create symlink so programs depending on `php` still function
 RUN ln -s /usr/bin/php82 /usr/bin/php
 
+# Make sure files/folders needed by the processes are accessable when they run under the nobody user
+RUN chown -R nobody.nobody /var/www/html /run /var/lib/nginx /var/log/nginx /var/log/php82
+
 # Configure nginx - http
 COPY config/nginx.conf /etc/nginx/nginx.conf
 # Configure nginx - default server
